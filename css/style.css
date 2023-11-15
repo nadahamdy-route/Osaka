@@ -1,0 +1,100 @@
+/* Global style */
+:root{
+    --main-color:#FF206E;
+}
+.text-pink{
+    color: var(--main-color);
+}
+a{
+    text-decoration: none;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.title h2{
+    font-size: 6rem;
+    color: rgba(220, 220, 220, 0.358);
+    letter-spacing: 15px;
+}
+/* Navbar */
+.nav-link {
+    color: white;
+}
+.nav-link:hover{
+    color: var(--main-color);
+}
+.navbar-nav .nav-link.active{
+    color: var(--main-color);
+}
+
+
+
+/* home */
+#home{
+    background-image: url(../images/bggg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#home .icon{
+    width: 50px;
+    height: 50px;
+    border: solid 1px rgba(220, 220, 220, 0.263);
+    border-radius: 50%;
+    transition: border-color 1s;
+}
+
+#home .icon:hover{
+    border-color: white;
+    
+}
+#home .icon i{
+    transition: color 1s;
+} 
+#home .icon:hover i{
+    color: var(--main-color);
+}
+/* About */
+#about{
+    background-image: url(../images/light_dot.jpg);
+}
+/* Services */
+#services .service-icon{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+}
+#services .service-item h2{
+    position: relative;
+}
+#services .service-item h2::after{
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    transition: width 1s;
+}
+#services .service-item:hover h2::after{
+    width: 100px;
+}
+/* Testmonial */
+
+#testmonial .testmonial-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.carousel-indicators [data-bs-target]
+{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    text-indent: 0;
+}
+

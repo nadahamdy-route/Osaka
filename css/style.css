@@ -1,0 +1,149 @@
+/* Global Style */
+:root {
+    --main-color: #FF206E;
+}
+
+.text-pink {
+    color: var(--main-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.title p{
+    font-size: 6rem;
+    color: rgba(220, 220, 220, 0.358);
+    letter-spacing: 15px;
+}
+/* Navbar */
+
+.navbar-nav .nav-link.active{
+    color: var(--main-color);
+}
+.nav-link{
+    color: white;
+    transition: color 1s;
+}
+.nav-link:hover{
+    color: var(--main-color);
+}
+/* home */
+#home {
+    background-image: url(../images/bggg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    color: white;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border: solid 1px rgba(220, 220, 220, 0.342);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: border-color 1s;
+}
+
+.icon i {
+    transition: color 1s;
+}
+
+.icon:hover i {
+    color: var(--main-color);
+}
+
+.icon:hover {
+    border-color: white;
+}
+
+/* About */
+#about{
+    background-image:url(../images/light_dot.jpg) ;
+}
+/* Services */
+.service-item h3{
+    position: relative;
+}
+.service-item h3::after{
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 1s;
+}
+
+.service-item:hover h3::after{
+    width: 100px;
+}
+
+/* Testmonial */
+.testmonial-item img {
+    width: 50px;
+    height: 50px;
+}
+.carousel-indicators [data-bs-target] {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-indent:0;
+}
+
+/* portfolio  */
+
+
+#portfolio .layer {
+    top: 0;
+    left: 15px;
+    right: 15px;
+    bottom: 100%;
+    opacity: 0;
+    transition: opacity 1s , bottom 1s;
+    
+}
+#portfolio .portfolio-item:hover .layer{
+    opacity: 1;
+    bottom: 15px;
+}
+#portfolio .portfolio-item:hover img{
+    filter: blur(3px);
+}
+ .modal-content {
+    background-color: transparent;
+    border: none;
+}
+.btn-close {
+    --bs-btn-close-bg:none;
+    --bs-btn-close-opacity:1;
+}
+.modal-header {
+    border-bottom: none;
+}
+#portfolio .nav-link {
+    color: black;
+}
+#portfolio .nav-pills .nav-link.active{
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 40px;
+}
+
+@media screen and (max-width:576px) {
+    .title p {
+        font-size: 3rem;
+    }
+}
+
+
+
